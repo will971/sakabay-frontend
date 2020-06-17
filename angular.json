@@ -70,7 +70,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "sakabay-frontend:build"
+            "browserTarget": "sakabay-frontend:build",
+            "proxyConfig": "src/proxy.conf.json"
           },
           "configurations": {
             "production": {

@@ -7,6 +7,7 @@ import { ComptesModule } from './comptes/comptes.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PartageModule } from './partage/partage.module';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { PartageModule } from './partage/partage.module';
     AppRoutingModule,
     ComptesModule,
     PartageModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

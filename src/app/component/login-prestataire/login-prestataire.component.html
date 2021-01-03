@@ -1,0 +1,16 @@
+
+<h3 class="">Connectez-vous en tant que prestataire de service afin de trouver des clients </h3>
+
+<form [formGroup]="loginForm" (submit)="login()" class="mt-4"> 
+  <ion-item class="rounded">
+      <ion-label position="floating">Mail</ion-label>
+      <ion-input type="email" formControlName ="addMail"></ion-input>
+  </ion-item>
+  <ion-item class="mt-5 rounded">
+    <ion-label  position="floating"> Mot de passe</ion-label>
+    <ion-input type="password" formControlName="pass" ></ion-input>
+  </ion-item>
+
+  <ion-button [disabled]="loginForm.invalid" type="submit" class="mt-5">Se connecter</ion-button>
+
+</form>

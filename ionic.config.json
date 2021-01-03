@@ -1,0 +1,7 @@
+{
+  "name": "sakabay-ionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

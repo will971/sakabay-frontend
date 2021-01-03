@@ -1,0 +1,24 @@
+
+<h3 class="">Bonjour !</h3>
+<p>Connectez-vous pour découvrir toutes nos fonctionnalités.</p>
+
+<form [formGroup]="loginForm" (submit)="login()" class="mt-4"> 
+  <ion-item class="rounded">
+      <ion-label position="floating">Votre adresse mail</ion-label>
+      <ion-input type="email" formControlName ="addMail"></ion-input>
+  </ion-item>
+  <ion-item class="mt-3 rounded">
+    <ion-label  position="floating"> Mot de passe</ion-label>
+    <ion-input type="password" formControlName="pass" ></ion-input>
+  </ion-item>
+  <ion-row  class="text-left mt-2">
+    <ion-col>
+      <a href="/mdp-oublie">Mot de passe oublié ?</a>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-button [disabled]="loginForm.invalid" type="submit" class="mt-5">Se connecter</ion-button>
+    </ion-col>
+  </ion-row>
+</form>

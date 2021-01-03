@@ -1,7 +1,34 @@
-<app-navbar></app-navbar>
+<ion-app>
+  <ion-split-pane contentId="main-content" when="true">
+    <ion-menu contentId="main-content" type="reveal" swipeGesture="true"  max-edge-start="50" >
+      <ion-content>
+        <ion-list id="inbox-list">
+          <ion-list-header>O'Artisant</ion-list-header>
+          <ion-note>Trouvez l'artisant qu'il vous faut</ion-note>
 
+          <ion-menu-toggle auto-hide="false">
+            <ion-item routerDirection="root" routerLink="/home" >
+              <ion-icon name="home-outline" slot="start"></ion-icon>              
+              <ion-label>Accueil</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
 
-<div class="container container-fluid">
-  <router-outlet></router-outlet>
+        <ion-list id="labels-list">
+          <ion-list-header>Compte</ion-list-header>
 
-</div>
+          <ion-menu-toggle auto-hide="false">
+            <ion-item routerDirection="root" routerLink="/login" >
+              <ion-icon name="log-in-outline" slot="start"></ion-icon>
+              <ion-label>Se connecter</ion-label>
+            </ion-item>
+            <ion-item routerDirection="root" routerLink="/register" >
+              <ion-label>S'inscrire</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

@@ -3,14 +3,15 @@ import { CommonModule } from '@angular/common';
 import { LoginUtilisateurComponent } from './login-utilisateur/login-utilisateur.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
-import { LoginPrestataireComponent } from './login-prestataire/login-prestataire.component';
 import { RouterModule } from '@angular/router';
+import { RegisterUtilisateurComponent } from './register-utilisateur/register-utilisateur.component';
 
 
 
 @NgModule({
   declarations: [
-    LoginUtilisateurComponent
+    LoginUtilisateurComponent,
+    RegisterUtilisateurComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +21,8 @@ import { RouterModule } from '@angular/router';
     RouterModule
   ],
   exports:[
-    LoginUtilisateurComponent
+    LoginUtilisateurComponent,
+    RegisterUtilisateurComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 

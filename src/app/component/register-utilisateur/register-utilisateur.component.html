@@ -1,0 +1,37 @@
+
+<h3 class="">Bonjour !</h3>
+<p>Inscrivez-vous pour découvrir toutes nos fonctionnalités.</p>
+
+<form [formGroup]="registerForm" (submit)="login()" class="mt-4 text-center"> 
+  <ion-item class="rounded">
+    <ion-label position="floating">Nom</ion-label>
+    <ion-input type="text" formControlName ="nom"></ion-input>
+</ion-item>
+<ion-item class="rounded">
+  <ion-label position="floating">Prénom</ion-label>
+  <ion-input type="text" formControlName ="prenom"></ion-input>
+</ion-item>
+  
+  <ion-item class="rounded">
+      <ion-label position="floating">Votre adresse mail</ion-label>
+      <ion-input type="email" formControlName ="addMail"></ion-input>
+  </ion-item>
+  <ion-item class="mt-3 rounded">
+    <ion-label  position="floating"> Mot de passe</ion-label>
+    <ion-input type="password" formControlName="pass" ></ion-input>
+  </ion-item>
+  <ion-item class="rounded">
+    <ion-label  position="floating"> Confirmation du mot de passe </ion-label>
+    <ion-input type="password" formControlName="confPass" ></ion-input>
+  </ion-item>
+
+  <ion-row>
+    <ion-col>
+      <ion-button [disabled]="registerForm.invalid" type="submit" class="mt-5">S'enregistrer</ion-button>
+      <ion-button routerLink="/login" class="mt-5" fill="clear" shape="round" size="small">Ou alors se connecter ? </ion-button>
+
+    </ion-col>
+  </ion-row>
+
+</form>
+

@@ -1,9 +1,33 @@
-<ion-header>
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>register</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Créer un compte</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <ion-grid fixed>
+    <ion-row class="ion-justify-content-between mt-5" >
+      <ion-col size-lg="6">
+        <h1>Envie de proposer vos services sur notre plateforme ?</h1>
+        <p>Inscrivez-vous</p>
+        <p>Remplissez vos compétences</p>
+        <p>Choissisez le service fournis</p>
+        <p>Décrivez au mieu votre spécialité</p>
+        <p>Commencez à répondre a vos clients</p>
+        <h1>Ou alors juste envie de contacter un artisant ? </h1>
+        <p>Inscrivez-vous</p>
+        <p>Rechercher l'artisant dont vous avez besoin</p>
+        <p>Rencontrer le</p>
+      </ion-col>
+      <ion-col size-lg="5" class="border rounded-lg p-4">
+        <app-register-utilisateur></app-register-utilisateur>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid> 
 
 </ion-content>

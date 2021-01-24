@@ -1,26 +1,37 @@
 <ion-app>
-  <ion-split-pane contentId="main-content" when="true">
-    <ion-menu contentId="main-content" type="reveal" swipeGesture="true"  max-edge-start="50" >
-      <ion-content>
+  <ion-split-pane contentId="main-content" class="ion-no-border">  
+    <ion-menu contentId="main-content"  class="ion-no-border">
+      <ion-content  class="ion-no-border">
         <ion-list id="inbox-list">
           <ion-list-header>O'Artisant</ion-list-header>
           <ion-note>Trouvez l'artisant qu'il vous faut</ion-note>
 
           <ion-menu-toggle auto-hide="false">
-            <ion-item routerDirection="root" routerLink="/home" >
+            <ion-item routerDirection="root" routerLink="/home" lines="none" >
               <ion-icon name="home-outline" slot="start"></ion-icon>              
               <ion-label>Accueil</ion-label>
+            </ion-item>
+            <ion-item routerDirection="root" routerLink="/explorer" lines="none">
+              <ion-icon name="compass-outline" slot="start"></ion-icon>           
+              <ion-label>Explorer</ion-label>
+            </ion-item>
+            <ion-item routerDirection="root" routerLink="/message" lines="none">
+              <ion-icon name="chatbubbles-outline" slot="start"></ion-icon>             
+              <ion-label>Messages</ion-label>
             </ion-item>
           </ion-menu-toggle>
         </ion-list>
 
         <ion-list id="labels-list">
-          <ion-list-header>Compte</ion-list-header>
 
           <ion-menu-toggle auto-hide="false">
-            <ion-item routerDirection="root" routerLink="/login" >
+            <ion-item routerDirection="root" routerLink="/login" lines="none">
               <ion-icon name="log-in-outline" slot="start"></ion-icon>
               <ion-label>Se connecter</ion-label>
+            </ion-item>
+            <ion-item routerDirection="root" routerLink="/contact"  lines="none">
+              <ion-icon name="mail-outline" slot="start"></ion-icon>
+              <ion-label>Nous contacter</ion-label>
             </ion-item>
        
           </ion-menu-toggle>

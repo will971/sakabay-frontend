@@ -1,6 +1,5 @@
 
-<h3 class="">Bonjour !</h3>
-<p>Inscrivez-vous pour découvrir toutes nos fonctionnalités.</p>
+<h3>Inscrivez-vous pour découvrir toutes nos fonctionnalités.</h3>
 
 <form [formGroup]="registerForm" (submit)="login()" class="mt-4 text-center"> 
   <ion-item class="rounded">
@@ -28,8 +27,6 @@
   <ion-row>
     <ion-col>
       <ion-button [disabled]="registerForm.invalid" type="submit" class="mt-5">S'enregistrer</ion-button>
-      <ion-button routerLink="/login" class="mt-5" fill="clear" shape="round" size="small">Ou alors se connecter ? </ion-button>
-
     </ion-col>
   </ion-row>
 
